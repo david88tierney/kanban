@@ -1,0 +1,15 @@
+<div class="container">
+    <!-- <div class="title">Please enter a New Task</div> -->
+    <mat-card class="card">
+        <mat-card-title class="title">Add a new Idea</mat-card-title>
+        <mat-card-content>
+            <mat-form-field>
+                <mat-label class="error">Enter your idea</mat-label>
+                <input matInput placeholder="Example: Build a house" [formControl]="idea" required #idea>
+                <mat-error class="error" *ngIf="idea.invalid && idea.touched">{{getErrorMessage()}}</mat-error>
+            </mat-form-field>
+            <button type="submit" (click)="saveIdea(idea)">Submit</button>
+        </mat-card-content>
+    </mat-card>
+</div> 
+

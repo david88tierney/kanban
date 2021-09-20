@@ -16,7 +16,6 @@
     -webkit-text-fill-color: transparent;
 }
 
-
 .board {
     display: flex;
     flex-direction: column;
@@ -30,6 +29,8 @@
     .board-bar {
         background: rgba(gray, 0.5);
         padding: 8px 15px;
+        display: flex;
+        justify-content: space-between;
     
         .board-name {
             font-size: 20px;
